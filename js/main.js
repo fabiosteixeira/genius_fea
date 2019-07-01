@@ -1,6 +1,6 @@
 let controlaFS = document.getElementById("btn_full");
 
-controlaFS.addEventListener("click", function() {
+controlaFS.addEventListener("click", () => {
   let doc = window.document;
   let docEl = doc.documentElement;
   let requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
