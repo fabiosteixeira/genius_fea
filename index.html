@@ -26,12 +26,12 @@
 <h1>GENIUS</h1>
 <div>  
   <div class="container">
-    <div class="sq_green transparente"></div>
-    <div class="sq_red transparente"></div>
+    <div class="sq_green transparente btn_color" id=1></div>
+    <div class="sq_red transparente btn_color" id=2></div>
   </div>
   <div class="float-clear container">
-    <div class="sq_yellow transparente"></div>
-    <div class="sq_blue transparente"></div>
+    <div class="sq_yellow transparente btn_color" id=3></div>
+    <div class="sq_blue transparente btn_color" id=4></div>
   </div>
 </div>
 <div class="float-clear align-center">
@@ -39,10 +39,17 @@
   <button id="btn_start" class="mt-10">Iniciar novo jogo</button>
 </div>
 
+<audio src="./audio/verde.mp3" id="a1"></audio>
+<audio src="./audio/vermelho.mp3" id="a2"></audio>
+<audio src="./audio/amarelo.mp3" id="a3"></audio>
+<audio src="./audio/azul.mp3" id="a4"></audio>
+<audio src="./audio/erro.mp3" id="aerro"></audio>
+
 <script src="js/vendor/modernizr-3.7.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
+<script src="js/helpers.js"></script>
 <script src="js/main.js"></script>
 <script src="js/game.js"></script>
 
