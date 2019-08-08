@@ -1,6 +1,5 @@
 //UTILIZAÇÃO DE LET
 let arr_Memory = []
-let arr_User = []
 let indice = 0;
 let jogoIniciado = false;
 
