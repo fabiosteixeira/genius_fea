@@ -96,6 +96,21 @@ h1 {
   margin-top: 10px;
 }
 
+.btn {
+  padding: 10px 18px;
+  color: white;
+  background: linear-gradient(#444, #222);
+  border: 1px solid #666;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+.btn:hover {
+  background: linear-gradient(#666, #333);
+  transform: scale(1.05);
+}
+
 .overlay {
   position: fixed;
   width: 100%;
