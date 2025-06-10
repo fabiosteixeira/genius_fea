@@ -3,6 +3,8 @@ let arr_Memory = []
 let indice = 0;
 let jogoIniciado = false;
 
+let score = document.getElementById("score");
+
 let btn_start = document.getElementById("btn_start");
 let btn_colors = document.querySelectorAll(".btn_color");
 
@@ -15,6 +17,7 @@ function resetaVariaveis() {
     indice = 0;
     arr_Memory = [];
     arr_User = [];
+    updateScore();
 }
 
 btn_colors.forEach(btn => {
@@ -37,6 +40,7 @@ function iniciarJogo() {
 function acrescentaListaMemoria() {
     let prox = getRandomArbitrary();
     arr_Memory.push(prox);
+    updateScore();
 }
 
 function clicaCor(id) {
@@ -83,4 +87,8 @@ function exibeListaMemoria() {
     loop();
 
     indice = 0;
+}
+
+function updateScore() {
+    score.textContent = `Nível: ${arr_Memory.length}`;
 }
